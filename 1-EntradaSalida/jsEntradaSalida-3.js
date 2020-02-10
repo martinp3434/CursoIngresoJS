@@ -5,8 +5,7 @@ function mostrar()
 	var nombre;
 
 	nombre = document.getElementById('elNombre').value;
-	alert (nombre);
-	document.getElementById('elNombre').value;=nfjgffj
+	document.getElementById('elNombre').value;=nombre;
 }
 
 
