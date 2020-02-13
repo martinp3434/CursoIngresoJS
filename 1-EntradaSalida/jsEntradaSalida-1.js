@@ -6,11 +6,12 @@ function mostrar()
 	var apellido="nadie";
 
 	apellido="Perez";
-	alert(apellido);
+	
 	//primerPrecio="$24"; 
 	//alert ("Me gusta la merca" );//es literal si esta entre doble comillas			
 	//alert (apellido);
 	//alert();// sale vacio
 	//alert(primerPrecio);
+	//testeando git
 }
 
