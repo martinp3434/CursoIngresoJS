@@ -7,7 +7,8 @@ function mostrar()
 
 	Estadocivil = document.getElementById('estadoCivil').value;
 
-	if (Edad<17 && Estadocivil =! Soltero)
+	if (Edad<17 && Estadocivil != "Soltero")
 	{
 		alert("Es muy pequeño para NO ser soltero.");
 	}
+}
