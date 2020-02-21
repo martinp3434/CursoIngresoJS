@@ -1,12 +1,34 @@
 function mostrar()
 {
 
-	var contador=0;
-	var acumulador=0;
+	var Acumulador;
+	var Contador;
+	var Numeroingrersado;
+	var Promedio;
 
+	Contador = 0;
+	Acumulador = 0;
 
+	while( Contador < 5 )
+		{
+			
+			Numeroingrersado = prompt("ingrese un numero");
+			Numeroingrersado = parseInt(Numeroingrersado);
+			while(isNaN(Numeroingrersado))
+			{
+				Numeroingrersado = prompt("No sea puto, ingrese un numero");
+				Numeroingrersado = parseInt(Numeroingrersado);
+			}
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/5;
+			Acumulador = Acumulador + Numeroingrersado;	
 
-}//FIN DE LA FUNCIÓN
+			Contador = Contador +1;
+
+		}
+
+	Promedio = Acumulador / Contador;
+
+	document.getElementById('suma').value = Acumulador;
+
+	document.getElementById('promedio').value = Promedio;
+}
