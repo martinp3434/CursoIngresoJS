@@ -31,18 +31,17 @@ function mostrar()
 			if( Numeroingrersado < numeromin )
 			{
 				numeromin = Numeroingrersado;
-			}else
-			{
-				if(Numeroingrersado > numeromax)
-				{
-					numeromax = Numeroingrersado
-				}
 			}
+			
+			if(Numeroingrersado > numeromax)
+			{
+				numeromax = Numeroingrersado
+			}	
 		}
 		respuesta = prompt("Quiere continuar? ");
 	}
 
 	document.getElementById('maximo').value = "El numero maximo es: " + numeromax;
 
-	document.getElementById('minimo').value = "Enumeromin;
+	document.getElementById('minimo').value = "El numero minimo es: " + numeromin;
 }
